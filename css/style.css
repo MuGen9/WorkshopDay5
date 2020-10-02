@@ -1,5 +1,120 @@
+:root {
+    --color-primary: #08A6E4;
+    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-redish: #FB3B64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-grey: #A5A5A5;
+    --color-light-grey: #F7F7F7;
+    --button-radius: 35px;
+    --font-raleway: "Raleway", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+  }
 
+/* General */
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-open-sans);
+    text-align: center;
+}
+  
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1352px;
+    margin: 0 auto;
+}
+
+.btn {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 16px 65px;
+    border-radius: var(--button-radius);
+    border: none;
+}
+
+/* Header */
+
+.header {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav__link {
+    color: var(--color-grey);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 28px 20px 22px 20px;
+}
+
+a.logo {
+    color: var(--color-primary);
+    font-family: var(--font-raleway);
+    font-size: 2rem;
+}
+
+/* Opening section  */
+
+.opening__content {
+    margin-top: 130px;
+}
+
+.opening__header {
+    font-size: 3rem;
+    font-family: var(--font-raleway);
+}
+
+.opening__text {
+    margin: 20px 0 40px;
+}
+
+.opening__image {
+    width: 100%;
+    height: auto;
+}
+
+.opening__button {
+    background-color: var(--color-primary);
+    box-shadow: 3px 10px 14px var(--color-primary-shadow);
+    padding: 22px 155px;
+}
+
+/* Statistics section */
+
+.stats {
+    margin-top: 100px;
+}
+
+.stats__header {
+    font-family: var(--font-raleway);
+    font-size: 2.3rem;
+}
+
+.stats__container {
+    margin: 100px auto;
+    display: flex;
+    max-width: 800px;
+    justify-content: space-between;
 }
