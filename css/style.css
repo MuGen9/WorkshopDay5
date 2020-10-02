@@ -64,9 +64,15 @@ a:hover {
 
 .nav__link {
     color: var(--color-grey);
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     padding: 28px 20px 22px 20px;
+    border-bottom: 4px solid transparent;
+}
+
+.nav__link:hover {
+    border-bottom: 4px solid var(--color-primary);
+    color: var(--color-black);
 }
 
 a.logo {
@@ -104,7 +110,8 @@ a.logo {
 /* Statistics section */
 
 .stats {
-    margin-top: 100px;
+    padding-top: 100px;
+    margin-bottom: 100px;
 }
 
 .stats__header {
@@ -117,4 +124,79 @@ a.logo {
     display: flex;
     max-width: 800px;
     justify-content: space-between;
+}
+
+.stats__circle {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.stats__image {
+    position: absolute;
+    top: 16%;
+    left: 31%;
+}
+
+.stats__single:nth-child(1) .stats__circle{
+    background-color: var(--color-redish);
+}
+
+.stats__single:nth-child(2) .stats__circle{
+    background-color: var(--color-primary);
+}
+
+.stats__single:nth-child(3) .stats__circle{
+    background-color: var(--color-green);
+}
+
+.stats__number {
+    font-weight: 800;
+    font-family: var(--font-raleway);
+    letter-spacing: 5px;
+}
+
+.stats__description {
+    color: var(--color-grey)
+}
+
+/* Benefits section */
+
+.benefits {
+    background-color: var(--color-light-grey);
+    min-height: 500px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.benefits__container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.benefits__single {
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+.benefits__text {
+    width: 416px;
+    text-align: left;
+}
+
+.benefits__header {
+    font-family: var(--font-raleway);
+    font-size: 2rem;
+    margin: 70px 0 20px;
+}
+
+.notebook__image {
+    width: 386px;   
 }
