@@ -20,7 +20,6 @@
 
 body {
     font-family: var(--font-open-sans);
-    text-align: center;
 }
   
 a {
@@ -85,6 +84,7 @@ a.logo {
 
 .opening__content {
     margin-top: 130px;
+    text-align: center;
 }
 
 .opening__header {
@@ -241,3 +241,11 @@ a.logo {
     flex-grow: 3;
     margin-right: 40px;
 }
+
+@import "mixins";
+@import "reset";
+@import "variables";
+@import "base";
+@import "sections/pricing";
+@import "sections/contact";
+@import "sections/footer"
